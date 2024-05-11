@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            #parent1{
+                display: flex;
+                flex-direction:row;
+                width:850;
+                height:450;
+                justify-content: space-between;
+                
+
+                
+            }
+            #parent2{
+                display: flex;
+                flex-direction:row;
+                width:850;
+                height:450;
+                justify-content: space-between;
+
+                
+            }
+            #parent_child{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 200;
+                height:450;
+                background-color:azure;
+                border: 2px solid;
+                text-align: center;
+            }
+            #grand_parent{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                align-content: center;
+            }
+            h1{
+                font-size: 100;
+                text-align: center;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGO3AmIeIeSJDXya6HOo6BgxiAVtzZ4YyUOyTfvXZacA&s);
+                background-clip: text;
+                color: transparent;
+                animation-name: img_move;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                
+
+                    
+            }
+            @keyframes img_move{
+                from{
+                    background-position: right;
+                }
+                to{
+                    background-position: left;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>FOOD</h1>
+        <div id="grand_parent">
+            <div id="parent1">
+                <div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" width="200" height="300"></div>
+                    <div><p><h2>sandwich</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div>
+                <div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/steak.jpg" width="200" height="300"></div>
+                    <div><p><h2>Meat burger</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div><div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/cherries.jpg" width="200" height="300"></div>
+                    <div><p><h2>Cherries</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div><div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/wine.jpg" width="200" height="300"></div>
+                    <div><p><h2>Vegetable Pasta</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div>    
+            </div>
+            
+            <div id="parent2">
+                <div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/popsicle.jpg" width="200" height="300"></div>
+                    <div><p><h2> Popsicle</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div>
+                <div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/salmon.jpg" width="200" height="300"></div>
+                    <div><p><h2>Salmon </h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div><div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" width="200" height="300"></div>
+                    <div><p><h2>sandwich burger</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div><div id="parent_child">
+                    <div><img src="https://www.w3schools.com/w3images/croissant.jpg" width="200" height="300"></div>
+                    <div><p><h2>Le French</h2></p></div>
+                    <div>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                </div>    
+            </div>
+        </div>
+        
+    </body>
+</html>

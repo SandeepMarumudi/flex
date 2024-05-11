@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            h1{
+                font-size: 150;
+                text-align: center;
+                background-image: url(https://shotkit.com/wp-content/uploads/2023/02/dramatic-sky-when-where-sadiqur-rahman.jpeg);
+                background-clip: text;
+                color: transparent;
+                
+                animation-name: run;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                
+            }
+            
+
+            @keyframes run{
+                from{
+                    background-position: left;
+                }
+                to{
+                    background-position: right;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+            body{
+                background-color: azure;
+            }
+            img{
+                -webkit-transform: scaleX(-1);
+                animation-name: train;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                width:600;
+                
+                
+            }
+            @keyframes train{
+                0%{
+                  transform: translateX(100%);  
+
+                }
+                100%{
+                    transform: translateX(0%);
+                    
+
+                }
+            }
+            div{
+                display: flex;
+                flex-direction:column;
+                align-content: center;
+                height: 200;
+                
+            }
+           
+
+        </style>
+    </head>
+        <body>
+            <div>
+                <div>
+                    <a href="./flex.html"><h1>Task 1</h1></a>
+                <a href="./flexcommerce.html"><h1>Task 2</h1></a>
+                </div>
+                <div>
+                    <img src="https://www.freeiconspng.com/thumbs/toy-train-png/toy-train-png-23.png">
+                </div>
+            </div>
+            
+        </body>
+    
+</html>
